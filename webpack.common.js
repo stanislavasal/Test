@@ -84,6 +84,15 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // About page
+    new HtmlWebpackPlugin({
+      hash: true,
+      scriptLoading: 'blocking',
+      template: './src/about.html',
+      filename: './about.html',
+      chunks: ['index']
+    }),
+
     // Internal pages
     new HtmlWebpackPlugin({
       hash: true,
